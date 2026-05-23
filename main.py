@@ -54,11 +54,21 @@ def login(page, platform):
     page.goto(platform["url"], timeout=120000)
     page.wait_for_timeout(3000)
 
-    page.locator('input[type="text"]').first.fill(platform["user"])
-    page.locator('input[type="password"]').first.fill(
-        os.getenv(platform["password_env"])
-    )
+    page.wait_for_load_state("networkidle", timeout=60000)
+page.wait_for_timeout(5000)
 
+print("PAGE TITLE:", page.title())
+print("CURRENT URL:", page.url)
+print("INPUT COUNT:", page.locator("input").count())
+
+inputs = page.locator("input")
+
+if inputs.count() < 2:
+    page.screenshot(path=f"{platform['name']}_login_error.png", full_page=True)
+    raise Exception("Login input not found")
+
+inputs.nth(0).fill(platform["user"])
+inputs.nth(1).fill(os.getenv(platform["password_env"]))
     otp = get_otp(platform)
 
     if otp:
