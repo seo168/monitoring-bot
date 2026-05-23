@@ -4,4 +4,4 @@ gspread
 google-auth
 python-dotenv
 requests
-pyotpS
+pyotp
