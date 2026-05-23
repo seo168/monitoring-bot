@@ -52,35 +52,33 @@ def login(page, platform):
     print(f"LOGIN: {platform['name']}")
 
     page.goto(platform["url"], timeout=120000)
-    page.wait_for_timeout(3000)
-
     page.wait_for_load_state("networkidle", timeout=60000)
-page.wait_for_timeout(5000)
+    page.wait_for_timeout(5000)
 
-print("PAGE TITLE:", page.title())
-print("CURRENT URL:", page.url)
-print("INPUT COUNT:", page.locator("input").count())
+    print("PAGE TITLE:", page.title())
+    print("CURRENT URL:", page.url)
+    print("INPUT COUNT:", page.locator("input").count())
 
-inputs = page.locator("input")
+    inputs = page.locator("input")
 
-if inputs.count() < 2:
-    page.screenshot(path=f"{platform['name']}_login_error.png", full_page=True)
-    raise Exception("Login input not found")
+    if inputs.count() < 2:
+        page.screenshot(path=f"{platform['name']}_login_error.png", full_page=True)
+        raise Exception("Login input not found")
 
-inputs.nth(0).fill(platform["user"])
-inputs.nth(1).fill(os.getenv(platform["password_env"]))
+    inputs.nth(0).fill(platform["user"])
+    inputs.nth(1).fill(os.getenv(platform["password_env"]))
+
     otp = get_otp(platform)
 
     if otp:
         print(f"OTP READY: {platform['name']}")
-        otp_inputs = page.locator('input')
 
-        for i in range(otp_inputs.count()):
-            placeholder = (otp_inputs.nth(i).get_attribute("placeholder") or "").lower()
-            name = (otp_inputs.nth(i).get_attribute("name") or "").lower()
+        for i in range(inputs.count()):
+            placeholder = (inputs.nth(i).get_attribute("placeholder") or "").lower()
+            name = (inputs.nth(i).get_attribute("name") or "").lower()
 
             if "otp" in placeholder or "验证码" in placeholder or "code" in name:
-                otp_inputs.nth(i).fill(otp)
+                inputs.nth(i).fill(otp)
                 break
 
     login_btn = page.locator("button").filter(has_text="登录")
