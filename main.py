@@ -7,7 +7,8 @@ from playwright.sync_api import sync_playwright
 load_dotenv()
 
 GOOGLE_SHEET_ID = os.getenv("GOOGLE_SHEET_ID")
-CREDS_JSON = json.loads(os.getenv("GOOGLE_SERVICE_ACCOUNT_JSON"))
+raw = os.getenv("GOOGLE_SERVICE_ACCOUNT_JSON") print("JSON START:", raw[:30]) print("JSON LINES:", raw.count("
+")) CREDS_JSON = json.loads(raw)
 
 SCOPES = [
     "https://www.googleapis.com/auth/spreadsheets",
