@@ -1,71 +1,65 @@
 [
   {
-    "name":"xx7",
-    "country":"India",
-    "type":"india",
-    "url":"https://mtnrvz7mz2pv6lu5vxmt4.xx7bb.com/fb2bd42b7fae0e614f3f7396f8337430/index.html?#/",
-    "user":"xx7csj002",
-    "password_env":"XX7_PASSWORD",
-   "otp_secret_env":"XX7_OTP_SECRET"
+    "name": "xx7",
+    "country": "India",
+    "type": "india",
+    "url": "https://mtnrvz7mz2pv6lu5vxmt4.xx7bb.com/fb2bd42b7fae0e614f3f7396f8337430/index.html?#/",
+    "user": "xx7csj002",
+    "password_env": "XX7_PASSWORD",
+    "otp_secret_env": "XX7_OTP_SECRET"
   },
-
   {
-    "name":"xx6",
-    "country":"India",
-    "type":"india",
-    "url":"https://spghcvk7dek5m0qgiw4d.xx6cc.com/fb2bd42b7fae0e614f3f7396f8337430/index.html?#/",
-    "user":"xx6csj002",
-    "password_env":"XX6_PASSWORD",
-    "otp_secret_env":"XX6_OTP_SECRET"
+    "name": "xx6",
+    "country": "India",
+    "type": "india",
+    "url": "https://spghcvk7dek5m0qgiw4d.xx6cc.com/fb2bd42b7fae0e614f3f7396f8337430/index.html?#/",
+    "user": "xx6csj002",
+    "password_env": "XX6_PASSWORD",
+    "otp_secret_env": "XX6_OTP_SECRET"
   },
-
   {
-    "name":"xx5",
-    "country":"India",
-    "type":"india",
-    "url":"https://u4ebjed822dir9u1bp24d.xx5-in.vip/fb2bd42b7fae0e614f3f7396f8337430/index.html?#/",
-    "user":"xx6csj003",
-    "password_env":"XX5_PASSWORD",
-    "otp_secret_env":"XX5_OTP_SECRET",
+    "name": "xx5",
+    "country": "India",
+    "type": "india",
+    "url": "https://u4ebjed822dir9u1bp24d.xx5-in.vip/fb2bd42b7fae0e614f3f7396f8337430/index.html?#/",
+    "user": "xx5csj003",
+    "password_env": "XX5_PASSWORD",
+    "otp_secret_env": "XX5_OTP_SECRET"
   },
-
   {
-    "name":"yy9",
-    "country":"India",
-    "type":"india",
-    "url":"https://ivqrrl2kypvqf4g6wn69dq.yy9-in.vip/fb2bd42b7fae0e614f3f7396f8337430/index.html?#/",
-    "user":"yy9csj003",
-    "password_env":"YY9_PASSWORD",
-    "otp_secret_env":"YY9_OTP_SECRET"
+    "name": "yy9",
+    "country": "India",
+    "type": "india",
+    "url": "https://ivqrrl2kypvqf4g6wn69dq.yy9-in.vip/fb2bd42b7fae0e614f3f7396f8337430/index.html?#/",
+    "user": "yy9csj003",
+    "password_env": "YY9_PASSWORD",
+    "otp_secret_env": "YY9_OTP_SECRET"
   },
-
   {
-    "name":"yygame",
-    "country":"India",
-    "type":"india",
-    "url":"https://oz2is8lgeqgkyib6evvspp.yygame66.com/fb2bd42b7fae0e614f3f7396f8337430/index.html?#/",
-    "user":"csj002",
-    "password_env":"YYGAME_PASSWORD",
-"otp_secret_env":"YYGAME_OTP_SECRET"
+    "name": "yygame",
+    "country": "India",
+    "type": "india",
+    "url": "https://oz2is8lgeqgkyib6evvspp.yygame66.com/fb2bd42b7fae0e614f3f7396f8337430/index.html?#/",
+    "user": "csj002",
+    "password_env": "YYGAME_PASSWORD",
+    "otp_secret_env": "YYGAME_OTP_SECRET"
   },
-
   {
-    "name":"66game",
-    "country":"India",
-    "type":"india",
-    "url":"https://mnoqhp2dqgevatjahbwt0o.66game88.com/fb2bd42b7fae0e614f3f7396f8337430/index.html?#/",
-    "user":"csj003",
-    "password_env":"SIXSIX_PASSWORD",
-   "otp_secret_env":"SIXSIX_OTP_SECRET"
+    "name": "66game",
+    "country": "India",
+    "type": "india",
+    "url": "https://mnoqhp2dqgevatjahbwt0o.66game88.com/fb2bd42b7fae0e614f3f7396f8337430/index.html?#/",
+    "user": "csj003",
+    "password_env": "SIXSIX_PASSWORD",
+    "otp_secret_env": "SIXSIX_OTP_SECRET"
   },
-
   {
-    "name":"Bdspin",
-    "country":"Bangladesh",
-    "type":"bangladesh",
-    "url":"https://spin-bd.com/login#/login?redirect=/home/welcome",
-    "user":"BDcaiwu005",
-    "password_env":"BDSPIN_PASSWORD",
-    "otp_secret_env":"BDSPIN_OTP_SECRET"
+    "name": "Bdspin",
+    "country": "Bangladesh",
+    "type": "bangladesh",
+    "url": "https://spin-bd.com/login#/login?redirect=/home/welcome",
+    "user": "BDcaiwu005",
+    "password_env": "BDSPIN_PASSWORD",
+    "otp_secret_env": "BDSPIN_OTP_SECRET"
   }
 ]
